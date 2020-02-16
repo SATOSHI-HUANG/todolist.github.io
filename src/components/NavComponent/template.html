@@ -1,0 +1,5 @@
+<div class="nav">
+    <a class="normail" @click='selectHandler' :class='{active: current_item == "all"}'>My Task</a>
+    <a class="normail" @click='selectHandler' :class='{active: current_item == "active"}'>In Progress</a>
+    <a class="normail" @click='selectHandler' :class='{active: current_item == "completed"}'>Completed</a>
+</div>

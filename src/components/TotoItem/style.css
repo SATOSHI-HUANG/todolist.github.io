@@ -1,0 +1,67 @@
+.todo-item {
+    width: 620px;
+    height: 102px;
+    margin: auto auto 10px;
+    background-color: #F2F2F2;
+    padding: 24px 32px 16px 32px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.check {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+
+.check-label {
+    cursor: pointer;
+}
+
+.check-label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.check-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+}
+
+.title {
+    margin: 0 0 0 20px;
+    float: left;
+}
+
+.completed {
+    color: #c8c8c8;
+    text-decoration: line-through;
+}
+
+.check-label input:checked ~ .check-custom {
+    background-color: #4a90e2;
+}
+
+.check-label input:checked ~ .check-custom::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.check-label input:checked ~ .title {
+    color: #c8c8c8;
+    text-decoration: line-through;
+}

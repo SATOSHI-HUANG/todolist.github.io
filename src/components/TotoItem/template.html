@@ -1,0 +1,9 @@
+<div class="todo-item">
+    <div class="check">
+        <label class="check-label">
+            <input type="checkbox" id="completed" v-model='completed'>
+            <span class="check-custom"></span>
+        </label>
+    </div>
+    <h2 class="title" v-bind:class="titleCompleted">{{ todo.content }}</h2>
+</div>
